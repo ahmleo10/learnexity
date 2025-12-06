@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import HowItWorks from './components/HowItWorks';
 import CareerHero from './components/CareerHero';
-import CareerTracks from './components/careerTracks';
+import CareerTracks from './components/CareerTracks';
 import Career from './components/Career';
 import MentorSection from './components/MentorSection';
 import Stats from './components/Stats';
