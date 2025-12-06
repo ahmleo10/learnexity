@@ -11,7 +11,7 @@ export default function CareerTracks() {
     "Back end",
     "AI automation",
     "Cyber security",
-    "Product manager",
+    "Product management",
     "Web3",
     "Data analysis",
     "Video editing",
