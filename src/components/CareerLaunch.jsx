@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./careerLaunch.css";
+import "./CareerLaunch.css";
 
 export default function CareerLaunch() {
   const [openIndex, setOpenIndex] = useState(null);

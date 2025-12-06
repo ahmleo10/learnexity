@@ -1,4 +1,4 @@
-import "./career.css";
+import "./Career.css";
 import im4 from "../assets/im4.jpg";
 
 export default function Career() {

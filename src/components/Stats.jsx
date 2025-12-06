@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./stats.css";
+import "./Stats.css";
 
 export default function Stats() {
   const cardsRef = useRef([]);
