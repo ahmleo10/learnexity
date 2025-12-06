@@ -1,0 +1,59 @@
+.how-wrapper {
+  width: 100%;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+/* ===== PC/LAPTOP (Horizontal row) ===== */
+.cards-container {
+  display: flex;
+  flex-direction: row;   /* side-by-side on PC */
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* CARD */
+.how-card {
+  flex: 1;
+  border: 2px solid #2b1e70;
+  border-radius: 16px;
+  padding: 25px;
+  background: white;
+  text-align: center;
+  min-width: 200px;
+}
+
+/* ICON */
+.how-icon {
+  font-size: 40px;
+  color: #2b1e70;
+  margin-bottom: 12px;
+}
+
+/* TITLE */
+.how-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 40px 0 20px;
+  color: black;
+}
+
+/* ===== MOBILE (Vertical + Smaller) ===== */
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;       /* centers the cards */
+    gap: 15px;
+  }
+
+  .how-card {
+    width: 85%;                /* smaller width */
+    padding: 18px;             /* smaller padding */
+    border-radius: 12px;       /* slightly smaller corner */
+  }
+
+  .how-icon {
+    font-size: 32px;           /* smaller icon */
+  }
+}

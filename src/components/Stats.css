@@ -1,0 +1,88 @@
+.stats-container {
+  width: 100%;
+  background: #c59be6;
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.stat-card {
+  width: 100%;
+  max-width: 260px;
+  background: #fff;
+  padding: 60px 20px 25px;
+  border-radius: 14px;
+  position: relative;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s ease;
+}
+
+.stat-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* The curved top shape */
+.stat-card::before {
+  content: "";
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 80px;
+  background: #fff;
+  border-radius: 0 0 80px 80px;
+}
+
+/* Circle icon */
+.icon-wrapper {
+  width: 70px;
+  height: 70px;
+  background: #ededed;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon {
+  font-size: 28px;
+}
+
+/* Text styles */
+.stat-card h2 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.stat-card p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    max-width: 320px;
+  }
+}
